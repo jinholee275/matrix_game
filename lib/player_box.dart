@@ -49,7 +49,7 @@ class PlayerBox extends PositionComponent with HasGameRef, CollisionCallbacks {
 
     hitbox = RectangleHitbox()
       ..paint = hitPaint
-      ..renderShape = kDebugMode;
+      ..renderShape = false; //kDebugMode;
     add(hitbox);
   }
 }
